@@ -1,0 +1,20 @@
+Projext deverá ter:
+
+    - Simplicidade nos modelos para que sejam gerados API's
+    - Django
+    - Django rest framework
+    - Docker
+    - Arquivo de testes com o github actions
+    
+
+Como vai funcionar:
+
+    - Você poderá criar uma votação entre objetos, sendo que os objetos podem ser pessoas, coisas, etc.
+    - Terá o motivo da votação.
+    - Um tempo para terminar a votação.
+        - Se esse tempo terminar deve-se mostrar o resultado dos votos quando uma requisição para o mesmo for feita.
+        - Caso o tempo não tenha terminado, mostrará o andamento da votação e a opção de votar.
+    - Poderá ter no máximo 10 objetos para votação.
+    - As votações só poderão ser criadas por um superuser.
+
+
