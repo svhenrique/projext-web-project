@@ -16,5 +16,5 @@ Como vai funcionar:
         - Caso o tempo não tenha terminado, mostrará o andamento da votação e a opção de votar.
     - Poderá ter no máximo 10 objetos para votação.
     - As votações só poderão ser criadas por um superuser.
-
+    - Uma votação não poderá ser criada se outra votação estiver em andamento.
 
