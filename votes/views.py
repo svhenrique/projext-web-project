@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import FormView, TemplateView
 from .models import CamaraVoto
 
+
 class IndexView(TemplateView):
 
     template_name = 'index.html'
@@ -32,3 +33,4 @@ class IndexView(TemplateView):
         kwargs['camaras_data'] = camaras_data
 
         return super().get_context_data(**kwargs)
+
