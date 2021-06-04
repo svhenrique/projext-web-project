@@ -17,21 +17,21 @@ class Base(models.Model):
     class Meta:
         abstract = True
 
-class Tempo(models.Model):
 
+class CamaraVoto(Base):
+    # ver como deixar apenas 1 camara funcionando
+    nome = models.CharField('Nome da Camara de Votos', max_length=30)
     inicio = models.DateTimeField('Inicio')
     termino = models.DateTimeField('Termino')
 
-class CamaraVoto(Base):
-    # ver pq o tempo não é deletado quando a camara é deletada
-    tempo = models.OneToOneField(Tempo, verbose_name='Tempo', on_delete=models.CASCADE, unique=True)
-
+    def __str__(self):
+        return self.nome
 
 class Objeto(models.Model):
 
     camara = models.ForeignKey(CamaraVoto, on_delete=models.CASCADE)
-    nome = models.CharField('Nome', max_length=10)
+    nome = models.CharField('Nome', max_length=50)
     descricao = models.TextField('Descrição', max_length=200)
     imagem = StdImageField('Imagem', default="/static/img/blank-profile.png", upload_to=get_file_path,
                     variations={'thumb': {'width': 400, 'height': 400, 'crop': True}})
-
+    votos = models.IntegerField('Votos', default=0)
