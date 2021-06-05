@@ -60,9 +60,28 @@ venv/bin/activate
 ## Instalando dependências
 
 Para instalar dependências, basta usar o comando:
+
 ```bash
 pip install -r requirements.txt
 ```
+
+## Configurando .env
+
+Crie um arquivo de texto e nomeio para ".env" e salve na pasta raiz do projeto. Após isso, adicione 
+
+```bash
+SECRET_KEY=COLOQUE_SUA_SECRET_KEY
+```
+
+Do lado direito, em "COLOQUE_SUA_SECRET_KEY" ponha um hash de SECRET_KEY gerado pelo Django. 
+
+Uma das maneiras de conseguir o hash, é iniciando um novo projeto django com:
+
+```bash
+django-admin startproject projeto 
+```
+
+e pegando o hash guardado na variável SECRET_KEY no arquivo settings.py (fazer processo de coleta de SECRET_KEY em outra pasta e em outro ambiente virtual para assegurar o encapsulamento da aplicação).
 
 ## Executando o projeto
 
