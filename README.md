@@ -16,16 +16,6 @@ Aplicação que simula um ambiente de votação. Será possível criar diferente
     - Caso o tempo não tenha terminado, mostrara o andamento da votação e a opção de votar.
 - As votações só poderão ser criadas por um superuser.
     
-## Tecnologias usadas
-<p align='center'>
-    <a href="https://www.python.org/">
-        <img src='https://img.shields.io/badge/python-3776AB?logo=python&logoColor=white&style=for-the-badge' />
-    </a>
-    <a href="https://www.djangoproject.com/">
-        <img src='https://img.shields.io/badge/django-092E20?logo=django&logoColor=white&style=for-the-badge' />
-    </a>
-</p>
-
 ## Configuração do ambiente 
 
 É necessária a instalação da linguagem Python. É possível baixa-la aqui:
