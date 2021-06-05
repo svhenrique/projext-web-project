@@ -91,7 +91,7 @@ Após a instalação das dependências, é preciso executar o seguinte comando, 
 python manage.py migrate
 ```
 
-Com as migrações feitas no banco de dados, já pode-se iniciar o servidor com o comando:
+Com as migrações feitas no banco de dados, é possível iniciar o servidor com o comando:
 
 ```bash
 python manage.py runserver
