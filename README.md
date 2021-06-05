@@ -13,7 +13,7 @@ Aplicação que simula um ambiente de votação. Será possível criar diferente
 - Um ambiente terá o motivo da votação.
 - Sobre o tempo para terminar a votação.
     - Se esse tempo terminar deve-se mostrar o resultado dos votos quando uma requisição para o mesmo for feita.
-    - Caso o tempo não tenha terminado, mostrará o andamento da votação e a opção de votar.
+    - Caso o tempo não tenha terminado, mostrara o andamento da votação e a opção de votar.
 - As votações só poderão ser criadas por um superuser.
     
 ## Tecnologias usadas
