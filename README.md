@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ## Configurando .env
 
-Crie um arquivo de texto e nomeio para ".env" e salve na pasta raiz do projeto. Após isso, adicione 
+Crie um arquivo de texto e nomeio para ".env" e salve na pasta raiz do projeto. Após isso, adicione a seguinte linha ao arquivo criado:
 
 ```bash
 SECRET_KEY=COLOQUE_SUA_SECRET_KEY
