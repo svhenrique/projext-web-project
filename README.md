@@ -36,7 +36,7 @@ Passo a passo da instalação da linguagem pode ser encontrado aqui:
 
 - https://wiki.python.org/moin/BeginnersGuide/Download
 
-É recomendável que se use um ambiente virtual para utilização da aplicação. Mas antes, é preciso baixar a biblioteca virtualenv, para fazer isso basta executar o comando:
+É recomendável que se use um ambiente virtual para utilização da aplicação. Mas antes, é preciso baixar a biblioteca virtualenv e para fazer isso, basta executar o comando:
 
 
 ```bash
