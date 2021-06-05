@@ -18,6 +18,18 @@ Aplicação que simula um ambiente de votação. Será possível criar diferente
     
 ## Configuração do ambiente 
 
+### Clonando repositório
+
+Para clonar o repositório é possível baixa-lo completamente do github e extrair em uma pasta de projeto ou utilizar o comando:
+
+```bash
+git clone https://github.com/svhenrique/projext-web-project.git
+```
+
+Para utilizar o comando anterior é necessário ter o Git instalado no computador.
+
+### Configurando ambiente 
+
 É necessária a instalação da linguagem Python. É possível baixa-la aqui:
 
 - https://www.python.org/downloads/
