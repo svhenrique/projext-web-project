@@ -26,10 +26,8 @@ def atualizar_camaras(sender, environ, **kwargs):
         if termino < agora:
             camara.ativo = False
             camara.save()
-    print('oi')
 
 @receiver(pre_save, sender=CamaraVoto, dispatch_uid='slug_camara')
 def camara_pre_save(sender, instance, **kwargs):
     instance.slug = slugify(instance.nome)
-    print('oi2')
 
