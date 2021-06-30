@@ -75,13 +75,42 @@ SECRET_KEY=COLOQUE_SUA_SECRET_KEY
 
 Do lado direito, em "COLOQUE_SUA_SECRET_KEY" ponha um hash de SECRET_KEY gerado pelo Django. 
 
-Uma das maneiras de conseguir o hash, é iniciando um novo projeto django com:
+Algumas maneiras de conseguir o hash:
+
+- Iniciando um novo projeto django com:
 
 ```bash
 django-admin startproject projeto 
 ```
 
-e pegando o hash guardado na variável SECRET_KEY no arquivo settings.py (fazer processo de coleta de SECRET_KEY em outra pasta e em outro ambiente virtual para assegurar o encapsulamento da aplicação).
+Copia o hash guardado na variável SECRET_KEY no arquivo settings.py (fazer processo de coleta de SECRET_KEY em outra pasta e em outro ambiente virtual para assegurar o encapsulamento da aplicação) e cola na SECRET_KEY do .env.
+
+- Usando a função get_random_secret_key():
+
+Com o Django instalado, execute o comando
+
+```bash
+python manage.py shell
+```
+
+no shell, importe a função get_random_secret_key com o comando
+
+```bash
+from django.core.management.utils import get_random_secret_key
+```
+
+e utilize a função usando
+
+```bash
+get_random_secret_key()
+```
+
+copie o valor retornado e cole na SECRET_KEY do .env.
+
+- Utilizando Websites:
+
+Existem sites que geram SECRET_KEY do Django. Abra o link abaixo https://djecrety.ir/ e
+clique em "Generate", copie o valor gerado e cole na SECRET_KEY do .env.
 
 ## Executando o projeto
 
