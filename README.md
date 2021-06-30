@@ -67,15 +67,16 @@ pip install -r requirements.txt
 
 ## Configurando .env
 
-Crie um arquivo de texto e nomeio para ".env" e salve na pasta raiz do projeto. Após isso, adicione a seguinte linha ao arquivo criado:
+Crie um arquivo de texto e nomeio para ".env", ou utilize o env.example (lembre-se de renomear para ".env"), e salve na pasta raiz do projeto. Após isso, adicione esses comandos ao arquivo criado:
 
 ```bash
 SECRET_KEY=COLOQUE_SUA_SECRET_KEY
+DEBUG=True
 ```
 
-Do lado direito, em "COLOQUE_SUA_SECRET_KEY" ponha um hash de SECRET_KEY gerado pelo Django. 
+Do lado direito, em "COLOQUE_SUA_SECRET_KEY", ponha um hash de SECRET_KEY gerado pelo Django. 
 
-Algumas maneiras de conseguir o hash:
+### Algumas maneiras de conseguir o hash
 
 - Iniciando um novo projeto django com:
 
